@@ -1,0 +1,17 @@
+<html><head>
+<title>githubsync.py</title>
+<meta name="Generator" content="htmlizer/[Twisted, version 17.9.0]" />
+<link rel="alternate" href="githubsync.py" type="text/x-python" />
+
+</head>
+<body>
+<pre><span class="py-src-comment">#!/usr/bin/env python3</span>
+
+<span class="py-src-variable">commitmsg</span> = <span class="py-src-variable">input</span>(<span class="py-src-string">&#x27;Add you Commit Message: &#x27;</span>)
+
+<span class="py-src-variable">cd</span> ~/<span class="py-src-variable">mycode</span>
+<span class="py-src-variable">git</span> <span class="py-src-variable">add</span> *
+<span class="py-src-variable">git</span> <span class="py-src-variable">commit</span> -<span class="py-src-variable">m</span> <span class="py-src-string">&quot;{commitmsg}&quot;</span>
+<span class="py-src-variable">git</span> <span class="py-src-variable">push</span> <span class="py-src-variable">origin</span> <span class="py-src-variable">main</span>
+</pre>
+</body>
