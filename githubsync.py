@@ -7,9 +7,7 @@ movedir = 'cd ~/mycode'
 gitadd = 'git add *'
 gitcommit = 'git commit -m "' + commitmsg + '"'
 gitpush = 'git push origin main'
-
-print(commitmsg)
-
+print("\nYour commit message was: " + commitmsg +"\n")
 #cd ~/mycode
 os.system(movedir)
 # git add *
