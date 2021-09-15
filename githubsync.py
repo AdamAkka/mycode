@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import os
 
-commitmsg = input('Add you Commit Message: ')
+commitmsg = input('Add your Commit Message: ')
 
 movedir = 'cd ~/mycode'
 gitadd = 'git add *'
