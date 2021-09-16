@@ -1,0 +1,20 @@
+---
+- name: Simple playbook     # describes the playbook
+  hosts: renamed,!taz     # this is a reference to a group or host in the inventory
+  connection: ssh
+  gather_facts: false
+  become: true
+  
+  vars:
+      username: "adam"
+  
+  tasks:
+    - name: Ensure group "funkytown" exists
+      ansible.builtin.group:
+        name: funkytown
+        state: present
+    
+    - name: Make a user
+      ansible.builtin.user:
+        name: "{{ username }}"
+        group: funkytown
